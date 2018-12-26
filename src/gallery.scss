@@ -1,0 +1,67 @@
+:root {
+  //general variables
+  --gallery-cols: 3; // number of columns
+  --gallery-gap: 10px; // separation between items
+  --gallery-rows: 9;
+  //item variables
+  --item-col: 1;
+  --item-row: 1;
+  --item-height: 200px;
+}
+.gallery {
+  &-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(var(--gallery-cols), 1fr);
+    grid-gap: var(--gallery-gap);
+    &.rounded{
+      border-radius: 10px;
+    }
+  }
+  &-item {
+    border-radius: inherit;
+    width: 100%;
+    height: var(--item-height);
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    img {
+      
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+      object-position: center;
+    }
+    figcaption{
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      background: rgba(100,100,100,.5);
+      color: white;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      border-radius: inherit;
+    }
+    &.multi {
+      &-row {
+        grid-row: auto / span var(--item-row);
+        height: calc(
+          (var(--item-height) * var(--item-row)) + var(--gallery-gap)
+        );
+      }
+      &-col {
+        grid-column: auto / span var(--item-col);
+      }
+    }
+    &:hover {
+      figcaption{
+        opacity: 1;
+      }
+    }
+  }
+}

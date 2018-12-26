@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "scripts": {
+    "build:sass": "node-sass -r --output-style compressed src/*.scss -o dist",
+    "watch:sass": "yarn run build:sass && yarn run build:sass -w"
+  },
+  "name": "gallery.css",
+  "version": "1.0.0",
+  "description": "galery css is a pure css galery",
+  "main": "index.js",
+  "author": "Uriel Curiel",
+  "license": "MIT",
+  "private": true
+}
