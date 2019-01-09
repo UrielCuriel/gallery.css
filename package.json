@@ -12,5 +12,8 @@
   "main": "index.js",
   "author": "Uriel Curiel",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "typescript": "^3.2.2"
+  }
 }

@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Testing Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="dist/gallery.css" />
-
 </head>
+
 <body>
-    <div class="gallery-container">
+    <div class="gallery-container" id="gallery">
         <figure class="gallery-item">
-            <img src="https://picsum.photos/1500/1200/?random" alt="">
-            <figcaption>lorem</figcaption>
+            <img src="https://picsum.photos/1500/1200/?image=1" alt="">
+            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, molestiae.
+                <filter id="blur">
+                    <feGaussianBlur stdDeviation="5" />
+                </filter>
+            </figcaption>
+
         </figure>
         <figure class="gallery-item">
-            <img src="https://picsum.photos/1500/1200/?random" alt="">
-            <figcaption>lorem</figcaption>
+            <img src="https://picsum.photos/1500/1200/?image=2" alt="">
+            <figcaption>Lorem, ipsum.</figcaption>
         </figure>
         <figure class="gallery-item">
-            <img src="https://picsum.photos/1500/1200/?random" alt="">
-            <figcaption>lorem</figcaption>
+            <img src="https://picsum.photos/1500/1200/?image=3" alt="">
+            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum delectus adipisci
+                iure dolorum blanditiis unde, illum esse voluptatem sequi!</figcaption>
         </figure>
         <figure class="gallery-item">
-            <img src="https://picsum.photos/1500/1200/?random" alt="">
-            <figcaption>lorem</figcaption>
+            <img src="https://picsum.photos/1500/1200/?image=4" alt="">
+            <figcaption>Lorem ipsum dolor sit amet.</figcaption>
         </figure>
         <figure class="gallery-item">
-            <img src="https://picsum.photos/1500/1200/?random" alt="">
-            <figcaption>lorem</figcaption>
+            <img src="https://picsum.photos/1500/1200/?image=5" alt="">
+            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing.</figcaption>
         </figure>
         <figure class="gallery-item">
-            <img src="https://picsum.photos/1500/1200/?random" alt="">
-            <figcaption>lorem</figcaption>
+            <img src="https://picsum.photos/1500/1200/?image=6" alt="">
+            <figcaption>Lorem ipsum dolor sit amet consectetur.</figcaption>
         </figure>
         <figure class="gallery-item">
-            <img src="https://picsum.photos/1500/1200/?random" alt="">
-            <figcaption>lorem</figcaption>
+            <img src="https://picsum.photos/1500/1200/?image=7" alt="">
+            <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, illum aperiam. Eius!</figcaption>
         </figure>
         <figure class="gallery-item">
-            <img src="https://picsum.photos/1500/1200/?random" alt="">
-            <figcaption>lorem</figcaption>
+            <img src="https://picsum.photos/1500/1200/?image=8" alt="">
+            <figcaption>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, excepturi soluta non voluptates
+                minima eaque.</figcaption>
         </figure>
         <figure class="gallery-item">
-            <img src="https://picsum.photos/1500/1200/?random" alt="">
-            <figcaption>lorem</figcaption>
+            <img src="https://picsum.photos/1500/1200/?image=9" alt="">
+            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
         </figure>
         <figure class="gallery-item">
-            <img src="https://picsum.photos/1500/1200/?random" alt="">
+            <img src="https://picsum.photos/1500/1200/?image=10" alt="">
             <figcaption>lorem</figcaption>
         </figure>
-    </div>    
+    </div>
 </body>
+<script src="dist/gallery.js"></script>
+<script>
+    gallery('#gallery');
+</script>
+
 </html>
